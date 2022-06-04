@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+* .container {
+  max-width: 1440px;
+  height: 50px;
+  margin: 20px auto;
+  padding: 0px 50px;
+}
+
+* html {
+  scroll-behavior: bo;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #0C7AD8;
+  font-size: 1.6rem;
+  letter-spacing: 1.2px;
+  font-weight: 600;
+}
+
+.nav__logo i {
+  margin-right: 5px;
+}
+
+.nav .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 470px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav .list .item a {
+  color: #0C7AD8;
+  font-size: 1.1rem;
+  position: relative;
+}
+
+.nav .list .item a::before {
+  content: '';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 0;
+  height: 4px;
+  background: #000;
+  border-radius: 10px;
+  opacity: 0.6;
+  position: absolute;
+  top: 11px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.nav .list .item a:hover::before {
+  width: 100%;
+}
+
+.hero {
+  padding: 0px 0px;
+}
+
+.hero .swiper {
+  width: 100%;
+  height: 750px;
+  background: #ccc;
+}
+
+.hero .swiper-slide {
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url("./../../img/img-1.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.hero .swiper-slide:nth-child(2) {
+  background-image: url("./../../img/img-2.jpg");
+}
+
+.hero .swiper-slide:nth-child(3) {
+  background-image: url("./../../img/img-3.jpg");
+}
+
+.hero .swiper-slide:nth-child(4) {
+  background-image: url("./../../img/img-4.jpg");
+}
+
+.hero .swiper-slide .about {
+  width: 50%;
+  height: 300px;
+  margin: 100px 50px;
+  background: #79addeb5;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.hero .swiper-slide .about h1 {
+  letter-spacing: 1px;
+}
+
+.hero .swiper-slide .about p {
+  letter-spacing: 1px;
+}
+/*# sourceMappingURL=main.css.map */
